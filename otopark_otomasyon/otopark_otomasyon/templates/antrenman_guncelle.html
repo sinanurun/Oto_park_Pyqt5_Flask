@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Antrenman Güncelleme</title>
+</head>
+<body>
+{{ mesaj }}
+  <form  action="/antrenman_guncelle" method="POST">
+
+{{ mesaj }}
+    <div >
+       <table border="1">
+            <tr><td><label for="uname"><b>Antrenman Adı</b></label></td>
+                <td><input type="text" placeholder={{ antrenmanlar.antrenman_adi }} name="antrenman_adi" required></td></tr>
+
+        <tr><td><label ><b>Antrenman İçeriği</b></label></td>
+            <td><textarea rows="5" placeholder={{ antrenmanlar.antrenman_icerigi }} name="antrenman_icerigi" required></textarea></td></tr>
+
+            <tr><td><label for="text"><b>Antrenman Durum</b></label></td>
+                <td>  <select name="antrenman_durum">
+    <option value="0">Aktif</option>
+    <option value="1">Pasif</option>
+  </select></td></tr>
+
+            <tr><td colspan="2"><input type="hidden" name="antrenman_id" value={{ antrenmanlar.antrenman_id }}>
+                <button type="submit">Antrenman Güncelle</button></td></tr>
+        </table>
+    </div>
+
+  </form>
+</body>
+</html>

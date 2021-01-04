@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Üye Ekleme Ekranı</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>50</y>
+     <width>740</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>24</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Temel Üyelik İşlemlerine Hoş Geldiniz</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>5</x>
+     <y>110</y>
+     <width>790</width>
+     <height>431</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>790</width>
+     <height>431</height>
+    </size>
+   </property>
+   <attribute name="horizontalHeaderCascadingSectionResizes">
+    <bool>false</bool>
+   </attribute>
+   <attribute name="horizontalHeaderDefaultSectionSize">
+    <number>90</number>
+   </attribute>
+   <attribute name="horizontalHeaderStretchLastSection">
+    <bool>false</bool>
+   </attribute>
+   <column>
+    <property name="text">
+     <string>Adı Soyadı</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>T.C. No</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Sifre</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Telefon</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Adres</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Üye Notu</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Eğitmen</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Üyelik Bitiş Tarihi</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Durumu</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Güncelle</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Sil</string>
+    </property>
+   </column>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

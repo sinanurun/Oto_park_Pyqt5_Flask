@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Hoş Geldiniz</title>
+</head>
+<body>
+<table border="1">
+    <tr><td colspan="2">Değerli Sporcumuz Hoş Geldiniz</td></tr>
+    <tr><td>Sporcu Adı</td><td >{{ uyebilgisi.uye_adi_soyadi }}</td></tr>
+    <tr><td>Eğitmen Adı</td><td >{{ uyebilgisi.egitmenid.egitmen_adi_soyadi }}</td></tr>
+    <tr><td>Antrenman Programı</td><td >{{ uyebilgisi.antrenmanid.antrenman_icerigi }}</td></tr>
+    <tr><td>Özel Antrenman Programı</td><td>{{ uyebilgisi.ozel_antrenman }}</td></tr>
+    <tr><td>Üyelik Bitiş Tarihi</td><td>{{ uyebilgisi.uye_tarihi }}</td></tr>
+</table>
+</body>
+</html>

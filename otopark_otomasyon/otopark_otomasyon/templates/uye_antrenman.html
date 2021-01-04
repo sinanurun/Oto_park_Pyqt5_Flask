@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Üye Antrenman İşlemleri</title>
+</head>
+<body>
+
+{{ mesaj }}
+  <form  action="/uye_antrenman" method="POST">
+
+{{ mesaj }}
+    <div >
+       <table border="1">
+            <tr><td><label for="uname"><b>Üye Adı</b></label></td>
+                <td>{{ uye_bilgileri.uye_adi_soyadi }} ,</td></tr>
+
+        <tr><td><label ><b>Özel Antrenman</b></label></td>
+            <td><textarea rows="5" placeholder={{ uye_bilgileri.ozel_antrenman }} name="ozel_antrenman" >{{ uye_bilgileri.ozel_antrenman }}</textarea></td></tr>
+
+            <tr><td><label for="text"><b>Standart Antrenmanlar</b></label></td>
+                <td>  <select name="antrenman_id">
+                    {% for antrenman in antrenman_bilgileri %}
+                        <option value={{ antrenman.antrenman_id }} {% if uye_bilgileri.antrenman_id==antrenman.antrenman_id %}
+                        selected
+                        {% endif %}>{{ antrenman.antrenman_adi }}</option>
+                    {% endfor %}
+
+  </select></td></tr>
+
+            <tr><td colspan="2"><input type="hidden" name="uye_id" value={{ uye_bilgileri.uye_id }}>
+                <button type="submit">Üye Antrenman Güncelle</button></td></tr>
+        </table>
+    </div>
+
+  </form>
+
+</body>
+</html>

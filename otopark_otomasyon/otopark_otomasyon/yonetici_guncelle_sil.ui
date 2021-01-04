@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Üye Ekleme Ekranı</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>50</y>
+     <width>740</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>24</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Temel Yönetici İşlemlerine Hoş Geldiniz</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>25</x>
+     <y>110</y>
+     <width>749</width>
+     <height>431</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>751</width>
+     <height>431</height>
+    </size>
+   </property>
+   <attribute name="horizontalHeaderCascadingSectionResizes">
+    <bool>true</bool>
+   </attribute>
+   <attribute name="horizontalHeaderDefaultSectionSize">
+    <number>125</number>
+   </attribute>
+   <attribute name="horizontalHeaderStretchLastSection">
+    <bool>false</bool>
+   </attribute>
+   <column>
+    <property name="text">
+     <string>Adı Soyadı</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>TC No</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Şifre</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Durum</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Güncelle</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Sil</string>
+    </property>
+   </column>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

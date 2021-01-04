@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Eski Park Güncelleme ve Silme Ekranı</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>20</y>
+     <width>740</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>24</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Eski Park İşlemlerine Hoş Geldiniz</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>80</y>
+     <width>790</width>
+     <height>431</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>790</width>
+     <height>431</height>
+    </size>
+   </property>
+   <attribute name="horizontalHeaderCascadingSectionResizes">
+    <bool>false</bool>
+   </attribute>
+   <attribute name="horizontalHeaderDefaultSectionSize">
+    <number>97</number>
+   </attribute>
+   <attribute name="horizontalHeaderStretchLastSection">
+    <bool>false</bool>
+   </attribute>
+   <column>
+    <property name="text">
+     <string>Plaka</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Park Giriş</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Park Çıkış</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Süre</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Tutar</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Abone Bilgisi</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Araç Bilgisi</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Zaman Bilgisi</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Park Durumu</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Güncelle</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Sil</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QPushButton" name="toplu_sil_btn">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>520</y>
+     <width>241</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 0, 0);
+color: rgb(255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string>Toplu Silme Butonu</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Araç Ekleme,  Güncelleme ve Silme Ekranı</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>50</y>
+     <width>740</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>24</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Araç Ücret İşlemlerine Hoş Geldiniz</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>280</y>
+     <width>771</width>
+     <height>311</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>790</width>
+     <height>431</height>
+    </size>
+   </property>
+   <attribute name="horizontalHeaderCascadingSectionResizes">
+    <bool>false</bool>
+   </attribute>
+   <attribute name="horizontalHeaderDefaultSectionSize">
+    <number>120</number>
+   </attribute>
+   <attribute name="horizontalHeaderStretchLastSection">
+    <bool>false</bool>
+   </attribute>
+   <column>
+    <property name="text">
+     <string>Araç Tipi Adı</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Çarpan Katsayısı</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Araç Kapasitesi</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Güncelle</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Sil</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QWidget" name="formLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>110</y>
+     <width>491</width>
+     <height>129</height>
+    </rect>
+   </property>
+   <layout class="QFormLayout" name="formLayout">
+    <item row="0" column="0">
+     <widget class="QLabel" name="zamanAralAdLabel">
+      <property name="text">
+       <string>Zaman Araç Tipi Adı</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="arac_adi"/>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="zamanArpanEkleLabel">
+      <property name="text">
+       <string>Zaman Çarpanı Ekle</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLineEdit" name="arac_carpani"/>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="araKapasitesiLabel">
+      <property name="text">
+       <string>Araç Kapasitesi</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QLineEdit" name="arac_kapasite"/>
+    </item>
+    <item row="4" column="1">
+     <widget class="QPushButton" name="arac_ekle_btn">
+      <property name="text">
+       <string>Araç İşlemini Ekle</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Antrenman Programı Güncelle ve Ekranı</title>
+</head>
+<body>
+{{ mesaj }}
+
+<table border="1">
+    <tr><td>Antrenman Adı</td><td>Güncelle</td><td>Sil</td></tr>
+    {% for antrenman in antrenmanlar %}
+        <tr><td>{{ antrenman.antrenman_adi }}</td><td><a href="/antrenman_guncelle/{{antrenman.antrenman_id}}">Güncelle</a> </td>
+            <td><a href="/antrenman_sil/{{antrenman.antrenman_id}}">Sil</a></td></tr>
+    {% endfor %}
+
+</table>
+</body>
+</html>

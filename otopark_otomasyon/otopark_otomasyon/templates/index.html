@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Otopark Ototmasyon Web Sayfasına Hoşgeldiniz</title>
+</head>
+<body>
+Otopark Doluluk Oranı: % {{ oran }}
+{% if ucret %}
+   <br>Aracınızın Park Tutarı: {{ ucret }} TL
+    {% else %}
+<h1>Aşağıdaki Form Aracılığı ile Aracınızın Anlık Park Ücretini Öğrenebilirsiniz</h1>
+  <form  action="/" method="post">
+    <div >
+        <table border="1">
+            <tr><td><label for="uname"><b>Plaka Bilgisi</b></label></td>
+                <td><input type="text" placeholder="Plaka Bilgisi" name="plaka_bilgisi" required></td></tr>
+            <tr><td ></td><td ><button type="submit">Araç Sorgula</button></td></tr>
+        </table>
+    </div>
+  </form>
+{% endif %}
+</body>
+</html>

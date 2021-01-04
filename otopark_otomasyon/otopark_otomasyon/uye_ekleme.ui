@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Üye Ekleme Ekranı</string>
+  </property>
+  <widget class="QWidget" name="formLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>110</y>
+     <width>531</width>
+     <height>401</height>
+    </rect>
+   </property>
+   <layout class="QFormLayout" name="formLayout">
+    <item row="0" column="0">
+     <widget class="QLabel" name="yNeticiAdLabel">
+      <property name="text">
+       <string>Üye Adı Soyadı</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="uye_adi_soyadi"/>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="yNeticiTCNoLabel">
+      <property name="text">
+       <string>Üye T.C. No </string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLineEdit" name="uye_tc"/>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="yNeticiIfreLabel">
+      <property name="text">
+       <string>Üye Şifre</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QLineEdit" name="uye_sifre"/>
+    </item>
+    <item row="6" column="0">
+     <widget class="QLabel" name="yNeticiDurumuLabel">
+      <property name="text">
+       <string>Üye Durumu</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="1">
+     <widget class="QComboBox" name="uye_durum">
+      <item>
+       <property name="text">
+        <string>Aktif</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Pasif</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="8" column="0">
+     <widget class="QLabel" name="yelikBitiTarihiLabel_2">
+      <property name="text">
+       <string>Üyelik Bitiş Tarihi</string>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="1">
+     <widget class="QDateEdit" name="uyelik_tarihi">
+      <property name="dateTime">
+       <datetime>
+        <hour>0</hour>
+        <minute>0</minute>
+        <second>0</second>
+        <year>2000</year>
+        <month>1</month>
+        <day>5</day>
+       </datetime>
+      </property>
+      <property name="calendarPopup">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="9" column="1">
+     <widget class="QPushButton" name="uye_ekle_btn">
+      <property name="text">
+       <string>Yeni Üye Ekle</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="yeTelefonLabel">
+      <property name="text">
+       <string>Üye Telefon</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QLineEdit" name="uye_tel"/>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="yeAdresLabel">
+      <property name="text">
+       <string>Üye Adres</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QLineEdit" name="uye_adres"/>
+    </item>
+    <item row="5" column="0">
+     <widget class="QLabel" name="yeNotuLabel">
+      <property name="text">
+       <string>Üye Notu</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="1">
+     <widget class="QLineEdit" name="uye_notu"/>
+    </item>
+    <item row="7" column="0">
+     <widget class="QLabel" name="eItmenLabel">
+      <property name="text">
+       <string>Eğitmen</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="1">
+     <widget class="QComboBox" name="egitmen"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>50</y>
+     <width>740</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>24</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Yeni Üye Ekleme Formu</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

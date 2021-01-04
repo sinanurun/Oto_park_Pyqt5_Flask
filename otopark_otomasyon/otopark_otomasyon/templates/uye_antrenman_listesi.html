@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Üye Antrenman Listeleri</title>
+</head>
+<body>
+<table border="1">
+    <tr><td>Üye Adı Soyadı</td><td>Güncelle</td></tr>
+    {% for uye in uyeler %}
+        <tr><td>{{ uye.uye_adi_soyadi }}</td><td><a href="/uye_antrenman/{{uye.uye_id}}">Güncelle</a> </td>
+    {% endfor %}
+
+</table>
+</body>
+</html>

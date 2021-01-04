@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Otopark Otomasyonu</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>0</y>
+      <width>740</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>24</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Otopark Otomasyonuna Hoş Geldiniz</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>120</y>
+      <width>790</width>
+      <height>431</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>790</width>
+      <height>431</height>
+     </size>
+    </property>
+    <attribute name="horizontalHeaderCascadingSectionResizes">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="horizontalHeaderDefaultSectionSize">
+     <number>120</number>
+    </attribute>
+    <attribute name="horizontalHeaderStretchLastSection">
+     <bool>false</bool>
+    </attribute>
+    <column>
+     <property name="text">
+      <string>Araç Plakası</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Giriş Zamanı</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Abonelik Durumu</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Araç Tipi</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Ücret Hesapla</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Tutar</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Çıkış Yap</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>50</y>
+      <width>381</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>24</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Doluluk Oranı :</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="doluluk_orani">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>50</y>
+      <width>381</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>24</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Doluluk Oranı</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_yonetim">
+    <property name="title">
+     <string>Yönetim</string>
+    </property>
+    <addaction name="action_giris"/>
+    <addaction name="action_yonetici_ekle"/>
+    <addaction name="action_yonetici_guncelle"/>
+    <addaction name="action_cikis"/>
+   </widget>
+   <widget class="QMenu" name="menu_uyelik_islemleri">
+    <property name="title">
+     <string>Park İşlemleri</string>
+    </property>
+    <addaction name="action_arac_girisi"/>
+    <addaction name="action_arac_cikisi"/>
+    <addaction name="action_eski_parklar"/>
+   </widget>
+   <widget class="QMenu" name="menu_egitmen_islemleri">
+    <property name="title">
+     <string>Abone İşlemleri</string>
+    </property>
+    <addaction name="action_abone_Ekle"/>
+    <addaction name="action_abone_Sil"/>
+   </widget>
+   <widget class="QMenu" name="menuTarife_lemleri">
+    <property name="title">
+     <string>Tarife İşlemleri</string>
+    </property>
+    <addaction name="action_birim_zaman_tutari"/>
+    <addaction name="action_zaman_katsayilari"/>
+    <addaction name="action_arac_katsayilari"/>
+   </widget>
+   <addaction name="menu_yonetim"/>
+   <addaction name="menu_uyelik_islemleri"/>
+   <addaction name="menu_egitmen_islemleri"/>
+   <addaction name="menuTarife_lemleri"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action_yonetici_ekle">
+   <property name="text">
+    <string>Yönetici Ekle</string>
+   </property>
+  </action>
+  <action name="action_yonetici_guncelle">
+   <property name="text">
+    <string>Yönetici Güncelle - Sil</string>
+   </property>
+  </action>
+  <action name="action_cikis">
+   <property name="text">
+    <string>Çıkış</string>
+   </property>
+  </action>
+  <action name="action_uye_ekle">
+   <property name="text">
+    <string>Üye Ekle</string>
+   </property>
+  </action>
+  <action name="action_uye_guncelle_sil">
+   <property name="text">
+    <string>Üye Güncelle / Sil</string>
+   </property>
+  </action>
+  <action name="action_egitmen_ekle">
+   <property name="text">
+    <string>Eğitmen Ekle</string>
+   </property>
+  </action>
+  <action name="action_egitmen_guncelle_sil">
+   <property name="text">
+    <string>Eğitmen Güncelle / Sil</string>
+   </property>
+  </action>
+  <action name="action_giris">
+   <property name="text">
+    <string>Giriş</string>
+   </property>
+  </action>
+  <action name="action_arac_girisi">
+   <property name="text">
+    <string>Araç Girişi</string>
+   </property>
+  </action>
+  <action name="action_arac_cikisi">
+   <property name="text">
+    <string>Araç Çıkışı</string>
+   </property>
+  </action>
+  <action name="action_abone_Ekle">
+   <property name="text">
+    <string>Abone Ekle</string>
+   </property>
+  </action>
+  <action name="action_abone_Sil">
+   <property name="text">
+    <string>Abone Sil</string>
+   </property>
+  </action>
+  <action name="action_birim_zaman_tutari">
+   <property name="text">
+    <string>Birim Zaman Tutarı</string>
+   </property>
+  </action>
+  <action name="action_zaman_katsayilari">
+   <property name="text">
+    <string>Zamansal Kat Sayıları</string>
+   </property>
+  </action>
+  <action name="action_arac_katsayilari">
+   <property name="text">
+    <string>Araç Katsayıları</string>
+   </property>
+  </action>
+  <action name="action_eski_parklar">
+   <property name="text">
+    <string>Eski Parklar</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>action_cikis</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>299</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action_giris</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>299</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
